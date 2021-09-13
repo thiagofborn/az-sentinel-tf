@@ -1,0 +1,354 @@
+{
+  "rootTopicKey": "f920dd50-fb9b-4960-91d3-06c53cf0d91c",
+  "editorRootTopicKey": "f920dd50-fb9b-4960-91d3-06c53cf0d91c",
+  "focusKey": "0f185ada-8624-440c-bf65-527be218779a",
+  "extData": {
+    "TOPIC_REFERENCE": {
+      "reference": {}
+    }
+  },
+  "topics": [
+    {
+      "key": "72806a29-4d2f-48af-a76e-1b1e11a6ef24",
+      "parentKey": "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Analytics"
+        }
+      ]
+    },
+    {
+      "key": "e34561ad-cb99-4b44-ae20-84f729d07939",
+      "parentKey": "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+      "subKeys": [
+        "789aab7b-c2ae-493c-8315-6262e497ed23",
+        "b3a0b7cb-a9f8-43c4-a5d5-4e58d157077f"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Connectors"
+        }
+      ]
+    },
+    {
+      "key": "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+      "parentKey": "c2d2e5ef-c6ee-4d0b-9dd7-848a0eb3369c",
+      "subKeys": [
+        "e34561ad-cb99-4b44-ae20-84f729d07939",
+        "f51d2870-9e27-4d78-b275-bc90b4ded6db",
+        "72806a29-4d2f-48af-a76e-1b1e11a6ef24",
+        "c18ed263-07ab-4fc8-8965-ff1a0a8ca8a4"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Sentinel"
+        }
+      ]
+    },
+    {
+      "key": "de3460e7-588a-4fd7-af57-8c28abc5c81d",
+      "parentKey": "0f185ada-8624-440c-bf65-527be218779a",
+      "subKeys": [
+        "1e85d3e9-348e-4435-be75-1cb70f0b6173"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Terraform\n"
+        },
+        {
+          "type": "DESC",
+          "data": "## Best practice to keep the Terraform state remotely so you can collaborate\n\n* Create the Storage Account to save the state beforehand.\n\n\n\n## Pipeline starts in the \\*\\*launchpad\\*\\*. \n\n"
+        }
+      ]
+    },
+    {
+      "key": "ab31aaa6-d92b-4937-afc7-1c31fc5f3c33",
+      "parentKey": "1e85d3e9-348e-4435-be75-1cb70f0b6173",
+      "subKeys": [
+        "506faed8-dfea-446a-9d68-42415e904959"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "storage account\n"
+        },
+        {
+          "type": "DESC",
+          "data": "## Container Name: tfstate\n\n\n## Object Name: terraform.tfstate\n\n"
+        }
+      ]
+    },
+    {
+      "key": "1e85d3e9-348e-4435-be75-1cb70f0b6173",
+      "parentKey": "de3460e7-588a-4fd7-af57-8c28abc5c81d",
+      "subKeys": [
+        "ab31aaa6-d92b-4937-afc7-1c31fc5f3c33"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Resource Group"
+        },
+        {
+          "type": "DESC",
+          "data": "## Resource Group to keep Terraform State and the Storage Account\n\n"
+        }
+      ]
+    },
+    {
+      "key": "f1390e98-be83-4cb5-a250-c244d1c6d72a",
+      "parentKey": "c2d2e5ef-c6ee-4d0b-9dd7-848a0eb3369c",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Log Analytics Insights"
+        }
+      ]
+    },
+    {
+      "key": "f51d2870-9e27-4d78-b275-bc90b4ded6db",
+      "parentKey": "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Alerts"
+        }
+      ]
+    },
+    {
+      "key": "506faed8-dfea-446a-9d68-42415e904959",
+      "parentKey": "ab31aaa6-d92b-4937-afc7-1c31fc5f3c33",
+      "subKeys": [
+        "c2d2e5ef-c6ee-4d0b-9dd7-848a0eb3369c"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Resource Group"
+        },
+        {
+          "type": "DESC",
+          "data": "## Resource Group for you Log Analytics and Sentinel\n\n"
+        }
+      ]
+    },
+    {
+      "key": "b3a0b7cb-a9f8-43c4-a5d5-4e58d157077f",
+      "parentKey": "e34561ad-cb99-4b44-ae20-84f729d07939",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Billable"
+        }
+      ]
+    },
+    {
+      "key": "bfa2adc3-50b9-41d7-ad81-620a1be6f98b",
+      "parentKey": "f920dd50-fb9b-4960-91d3-06c53cf0d91c",
+      "subKeys": [
+        "bc3a6b65-0324-4bbf-a468-05a7c997095a",
+        "c265bb46-60c2-4bde-a252-a8abdeca7244"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Diagnostics"
+        }
+      ]
+    },
+    {
+      "key": "bc3a6b65-0324-4bbf-a468-05a7c997095a",
+      "parentKey": "bfa2adc3-50b9-41d7-ad81-620a1be6f98b",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Active Directory Diagnostics"
+        },
+        {
+          "type": "DESC",
+          "data": "## Prerequisite\n\n* Global Admin to enable AAD diagnostics \\- \n\n> That will not work via Service Principal . This needs to be enabled by an user . Using the Owner or Global Admin\n\nEnable Preview \\- User Impersonation \\- Does not work\n* Test via Terraform and GitHub Actions \\- Does not work\n\n\n## Import Terraform state to be able to push the new changes\n\nThe changes on the AAD Settings.\n\n\n## Recommendation\n\nEnable it via Azure Portal using the Azure Subscription Owner or any user with Global Admin Role.\n\n\n"
+        }
+      ]
+    },
+    {
+      "key": "c2d2e5ef-c6ee-4d0b-9dd7-848a0eb3369c",
+      "parentKey": "506faed8-dfea-446a-9d68-42415e904959",
+      "subKeys": [
+        "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+        "f1390e98-be83-4cb5-a250-c244d1c6d72a"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Log Analytics"
+        }
+      ]
+    },
+    {
+      "key": "f920dd50-fb9b-4960-91d3-06c53cf0d91c",
+      "parentKey": null,
+      "subKeys": [
+        "bfa2adc3-50b9-41d7-ad81-620a1be6f98b",
+        "0f185ada-8624-440c-bf65-527be218779a"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "az-sentinel-tf"
+        }
+      ]
+    },
+    {
+      "key": "0f185ada-8624-440c-bf65-527be218779a",
+      "parentKey": "f920dd50-fb9b-4960-91d3-06c53cf0d91c",
+      "subKeys": [
+        "de3460e7-588a-4fd7-af57-8c28abc5c81d"
+      ],
+      "collapse": true,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "GitHub Actions"
+        }
+      ]
+    },
+    {
+      "key": "c265bb46-60c2-4bde-a252-a8abdeca7244",
+      "parentKey": "bfa2adc3-50b9-41d7-ad81-620a1be6f98b",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Firewall Diagnostics"
+        }
+      ]
+    },
+    {
+      "key": "c18ed263-07ab-4fc8-8965-ff1a0a8ca8a4",
+      "parentKey": "d2a43a07-f4c6-4b32-9286-74e99ec9d351",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Dashboards"
+        }
+      ]
+    },
+    {
+      "key": "789aab7b-c2ae-493c-8315-6262e497ed23",
+      "parentKey": "e34561ad-cb99-4b44-ae20-84f729d07939",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "Non-Billable"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 0,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "34px",
+          "borderRadius": "35px",
+          "padding": "16px 18px 16px 18px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "10px 15px 10px 15px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "normalTopic": {
+        "contentStyle": {
+          "border": "1px solid #e8eaec",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "4px 10px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "white"
+        }
+      }
+    }
+  },
+  "formatVersion": "0.0"
+}

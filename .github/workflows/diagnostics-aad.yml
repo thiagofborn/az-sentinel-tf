@@ -1,0 +1,30 @@
+# File: .github/workflows/diagnostics-aad.yml
+# prerequisite: global-admin@your_organization
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - diag/**
+
+name: Workspace
+defaults:
+  run:
+    working-directory: ./diag
+jobs:
+
+  tf-pipeline-diagnostics:
+    runs-on: ubuntu-latest
+    env:
+      ARM_AZURE_LOGIN: ${{ secrets.AZURE_LOGIN }}
+      ARM_AZURE_PASS:  ${{ secrets.AZURE_PASS }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: Azure/cli@1.0.4
+      with:
+        azcliversion: 2.28.0
+        inlineScript: | 
+          echo ARM_AZURE_LOGIN 
+          echo $ARM_AZURE_LOGIN
+          az login -u $ARM_AZURE_LOGIN -p $ARM_AZURE_PASS --output none

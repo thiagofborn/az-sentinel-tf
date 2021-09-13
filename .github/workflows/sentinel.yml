@@ -1,0 +1,46 @@
+# File: .github/workflows/sentinel.yml
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - sentinel/main.tf
+
+name: 'Workspace Sentinel'
+defaults:
+  run:
+    working-directory: ./sentinel
+jobs:
+
+  tf-pipeline-sentinel:
+    runs-on: ubuntu-latest
+    env:
+      ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: hashicorp/setup-terraform@v1
+
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt -check
+      continue-on-error: true
+
+    - name: Terraform Init
+      id: init
+      run: terraform init
+
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color
+
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan -no-color -out output
+      
+    - name: Terraform Apply
+      id: apply
+      run: terraform apply "output"
