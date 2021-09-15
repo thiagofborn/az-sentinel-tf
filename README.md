@@ -20,7 +20,7 @@ You must have [Docker](https://www.docker.com/) installed on your local machine.
 
 ## Hands-on session
 
-Download VS Code, then from **VS Code:** _Git: Clone_ utility, you will clone the repository. After that, **VS Code:** will pop-up to **Reopen in Container**. Do it, and wait to the container image to be deployed. 
+Download VS Code, then from **VS Code:** _Git: Clone_ utility, you will clone the repository. After that, **VS Code:** will pop-up to **Reopen in Container**. Do it, and wait to the container image to be deployed. The container has the latest Terraform binary and a tool called **Roover**. This document does not the tool **Roover**.
 
 ## Service and related products
  
