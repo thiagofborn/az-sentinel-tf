@@ -31,9 +31,9 @@ jobs:
       run: terraform fmt -check
       continue-on-error: true
 
-    - name: Terraform error
-      id: error
-      run: terraform state push terraform.tfstate
+    - name: Terraform Init
+      id: init
+      run: terraform init
 
     - name: Terraform Validate
       id: validate
