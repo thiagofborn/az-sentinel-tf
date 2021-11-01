@@ -4,6 +4,7 @@ on:
     branches:
       - main
     paths:
+      - .github/workflows/sentinel.yml
       - sentinel/main.tf
       - sentinel/variables.tf
 
