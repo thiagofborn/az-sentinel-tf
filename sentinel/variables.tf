@@ -12,7 +12,7 @@ variable "location" {
 
 variable "log_analytics_workspace_name" {
   type        = string
-  default     = "sentinel-we-01"
+  default     = var.log_analytics_workspace_name
   description = "Log Analytics name used by Azure Sentinel"
 }
 
@@ -20,7 +20,9 @@ variable "resource_tags" {
   description = "Tags to set for all resources"
   type        = map(string)
   default = {
-    project     = "Terraform-Sentinel",
-    environment = "dev"
+    environment = "staging"
+    provisioner = "terraform"
+    pipeline    = "GitHub Actions"
+    team        = "security"
   }
 }

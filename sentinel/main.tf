@@ -9,8 +9,8 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name  = "tfstate-sentinel-rg"
-    storage_account_name = "tfstatetlhzh"
-    container_name       = "tfstate"
+    storage_account_name = "storage-we-msdn-01"
+    container_name       = "tfstate-security"
     key                  = "terraform.tfstate"
   }
 
@@ -23,6 +23,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg-sentinel" {
   name     = var.resource_group_name
   location = var.location
+  tags     = var.resource_tags
 }
 
 resource "azurerm_log_analytics_workspace" "rg-sentinel" {
@@ -31,6 +32,7 @@ resource "azurerm_log_analytics_workspace" "rg-sentinel" {
   resource_group_name = azurerm_resource_group.rg-sentinel.name
   sku                 = "PerGB2018"
   retention_in_days   = 30
+  tags                = var.resource_tags
 }
 
 resource "azurerm_log_analytics_solution" "rg-sentinel" {
