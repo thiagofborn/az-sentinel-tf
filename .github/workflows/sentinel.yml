@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - sentinel/main.tf
+      - sentinel/variables.tf
 
 name: 'Workspace Sentinel'
 defaults:

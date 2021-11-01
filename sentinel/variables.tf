@@ -12,6 +12,7 @@ variable "location" {
 
 variable "log_analytics_workspace_name" {
   type        = string
+  default     = "sentinel-we-msdn-01"
   description = "Log Analytics name used by Azure Sentinel"
 }
 
