@@ -33,7 +33,7 @@ jobs:
 
     - name: Terraform error
       id: error
-      run: terraform state push errored.tfstate
+      run: terraform state push terraform.tfstate
 
     - name: Terraform Validate
       id: validate
