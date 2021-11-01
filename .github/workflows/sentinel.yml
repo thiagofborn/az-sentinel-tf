@@ -31,10 +31,18 @@ jobs:
       run: terraform fmt -check
       continue-on-error: true
 
-    - name: Terraform Init
-      id: init
-      run: terraform init
+    - name: Terraform error
+      id: error
+      run: terraform state push errored.tfstate
 
-    - name: Terraform Destroy
-      id: destroy
-      run: terraform destroy -auto-approve -lock=false
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color
+
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan -no-color -out output
+      
+    - name: Terraform Apply
+      id: apply
+      run: terraform apply "output"
