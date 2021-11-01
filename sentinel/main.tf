@@ -8,8 +8,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "storage-we-msdn-01"
-    storage_account_name = "tfstatetw0bb"
+    resource_group_name  = var.resource_group_name_terraform
+    storage_account_name = "tfstatenoags"
     container_name       = "tfstate-security"
     key                  = "terraform.tfstate"
   }
