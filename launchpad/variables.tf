@@ -14,8 +14,9 @@ variable "resource_tags" {
   description = "Tags to set for all resources"
   type        = map(string)
   default = {
-    project     = "Terraform-Sentinel",
-    environment = "dev",
-    launchpad   = "tfstate-sentinel"
+    environment = "staging"
+    provisioner = "terraform"
+    pipeline    = "GitHub Actions"
+    team        = "security"
   }
 }
