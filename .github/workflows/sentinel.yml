@@ -7,6 +7,7 @@ on:
       - .github/workflows/sentinel.yml
       - sentinel/main.tf
       - sentinel/variables.tf
+      - sentinel/terraform.tfvars
 
 name: 'Workspace Sentinel'
 defaults:
