@@ -46,4 +46,4 @@ jobs:
       
     - name: Terraform Apply
       id: apply
-      run: terraform apply -lock=false
+      run: terraform apply -lock=false 
