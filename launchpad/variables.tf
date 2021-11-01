@@ -18,5 +18,6 @@ variable "resource_tags" {
     provisioner = "terraform"
     pipeline    = "GitHub Actions"
     team        = "security"
+    recreation  = "1"
   }
 }
