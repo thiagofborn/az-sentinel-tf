@@ -24,7 +24,7 @@ resource "azurerm_resource_group" "tfstate_securitry" {
 }
 
 resource "azurerm_storage_account" "tfstate_securitry" {
-  name                     = "tfstate_securitry${random_string.resource_code.result}"
+  name                     = "tfstate${random_string.resource_code.result}"
   resource_group_name      = azurerm_resource_group.tfstate_securitry.name
   location                 = azurerm_resource_group.tfstate_securitry.location
   account_tier             = "Standard"
