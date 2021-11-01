@@ -46,4 +46,4 @@ jobs:
       
     - name: Terraform Apply
       id: apply
-      run: terraform apply "output" -lock=false
+      run: terraform apply "output"
