@@ -1,7 +1,7 @@
 # From the Resource Group to Sentinel Hunting Queries
 ## Abstract
 
-Templates to manage and deploy features on Azure Sentinel via Terraform.
+Templates to manage and deploy features on Microsoft Sentinel via Terraform.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ In order to enable **Azure Active Directory Diagnostics**, you must use a **user
 
 [Terraform Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_aad_diagnostic_setting) about **Azure Active Directory Diagnostics**.
 
-## Log Analytics and Sentinel
+## Log Analytics and Microsoft Sentinel
 
 The snippets below are for reference. The templates in the repository use features like **variables** to simplify future management.
 
@@ -69,7 +69,7 @@ resource "azurerm_log_analytics_solution" "rg-sentinel" {
   }
 }
 ```
-## Azure Sentinel non-billable (Free) Connectors 
+## Microsoft Sentinel non-billable (Free) Connectors 
 
 1. [Azure Activity - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_azure_active_directory)
 2. [Manages a Microsoft Defender Advanced Threat Protection Data Connector - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_microsoft_defender_advanced_threat_protection)
@@ -78,13 +78,13 @@ resource "azurerm_log_analytics_solution" "rg-sentinel" {
 5. [Manages a Microsoft Cloud App Security Data Connector - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_microsoft_cloud_app_security)
 7. [Manages a Office 365 Data Connector - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_office_365)
 
-## Azure Sentinel Billable Connectors
+## Microsoft Sentinel Billable Connectors
 
 1. [Manages a Threat Intelligence Data Connector - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_threat_intelligence)
 2. [Manages a AWS CloudTrail Data Connector - Terraform sample](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sentinel_data_connector_aws_cloud_trail)
 
 
-## Azure Sentinel Alerts
+## Microsoft Sentinel Alerts
 
 References to the _Terraform_ official documentation. 
 
